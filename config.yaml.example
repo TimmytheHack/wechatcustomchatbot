@@ -1,0 +1,27 @@
+timezone: "America/New_York"
+tone: "friendly"
+gif_rate: "medium"
+gif_folder: "assets/gifs"
+proactive:
+  enabled: false
+  max_per_day: 1
+  cooldown_hours: 6
+  min_confidence: 0.6
+  max_pending_per_chat: 2
+quiet_hours:
+  - start: "00:00"
+    end: "09:00"
+groups:
+  allow_proactive: false
+  reply_only_when_mentioned: true
+security:
+  shared_secret: "CHANGE_ME"
+runtime:
+  host: "0.0.0.0"
+  port: 8000
+  scheduler_interval_seconds: 20
+  db_path: "data/bot.db"
+  connector: "bot.connector_stub:StubConnector"
+memory:
+  recent_messages: 30
+  summary_max_chars: 1200

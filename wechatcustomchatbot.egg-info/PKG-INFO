@@ -1,3 +1,17 @@
+Metadata-Version: 2.4
+Name: wechatcustomchatbot
+Version: 0.1.0
+Summary: Single-user, self-hosted WeChat LLM bot brain kit
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: fastapi>=0.110
+Requires-Dist: uvicorn>=0.27
+Requires-Dist: pydantic>=2.6
+Requires-Dist: PyYAML>=6.0
+Requires-Dist: APScheduler>=3.10
+Requires-Dist: httpx>=0.27
+Requires-Dist: python-dotenv>=1.0
+
 # WeChat Custom Chat Bot (Brain Kit)
 
 This repo provides a single-user, self-hosted "brain" for a personal WeChat account. It does not include any WeChat personal-account hook or SDK. You bring your own connector adapter and run the bot locally.
